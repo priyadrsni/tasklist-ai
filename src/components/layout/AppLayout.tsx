@@ -16,7 +16,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({
   return (
     <div className="min-h-screen flex">
       {showSidebar && (
-        <Sidebar className="w-64 flex-shrink-0" />
+        <Sidebar className="w-60 flex-shrink-0" />
       )}
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header title={title} />

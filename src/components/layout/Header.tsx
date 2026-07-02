@@ -11,17 +11,17 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header className={`bg-white shadow-sm border-b border-gray-200 ${className}`}>
-      <div className="px-6 py-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-900">{title}</h1>
-        <div className="flex items-center space-x-4">
+      <div className="px-3 py-2 flex items-center justify-between">
+        <h1 className="font-bold text-gray-900" style={{ fontSize: '18px', letterSpacing: '0', margin: '0' }}>{title}</h1>
+        <div className="flex items-center space-x-2">
           {/* Search (future) */}
           <button
-            className="p-2 hover:bg-gray-100 rounded-full opacity-50 cursor-not-allowed"
+            className="p-1 hover:bg-gray-100 rounded-full opacity-50 cursor-not-allowed"
             disabled
             title="Search (future)"
           >
             <svg
-              className="w-6 h-6 text-gray-600"
+              className="w-4 h-4 text-gray-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -37,12 +37,12 @@ const Header: React.FC<HeaderProps> = ({
 
           {/* Notifications (future) */}
           <button
-            className="p-2 hover:bg-gray-100 rounded-full opacity-50 cursor-not-allowed"
+            className="p-1 hover:bg-gray-100 rounded-full opacity-50 cursor-not-allowed"
             disabled
             title="Notifications (future)"
           >
             <svg
-              className="w-6 h-6 text-gray-600"
+              className="w-4 h-4 text-gray-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -57,8 +57,8 @@ const Header: React.FC<HeaderProps> = ({
           </button>
 
           {/* User Avatar */}
-          <button className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
-            <span className="text-white font-semibold text-sm">U</span>
+          <button className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+            <span className="text-white font-semibold text-xs">U</span>
           </button>
         </div>
       </div>
